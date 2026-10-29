@@ -13,7 +13,6 @@
 - [实践文章：用 Codex 做设计出图，37 个 Skills 实践](docs/37-skills-practice.md)
 - [逐功能测试结论](docs/validation/测试报告.md)
 - [图文报告 HTML（下载仓库后在浏览器打开）](docs/validation/测试报告.html)
-- [功能与 Skill 映射](docs/功能与Skill映射.csv)
 
 ![室内与建筑渲染对照](docs/images/01-室内与建筑渲染对照.png)
 
