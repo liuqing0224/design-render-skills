@@ -1,0 +1,3 @@
+interface:
+  display_name: "人物模特添加"
+  short_description: "由Codex完成人物模特添加，提供输入要求、执行步骤、验收与失败处理"

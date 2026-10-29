@@ -1,0 +1,29 @@
+{
+  "skill": "evai-image-to-3d",
+  "method": "manual reference interpretation and local parametric meshing",
+  "automatic_reconstruction": false,
+  "unit": "meter, assumed visual dimensions",
+  "geometry_count": 5,
+  "triangles": 444,
+  "bounds": [
+    [
+      -0.23778341710567474,
+      -0.2199999988079071,
+      0.012308361940085888
+    ],
+    [
+      0.23778341710567474,
+      0.2549999952316284,
+      0.7789999842643738
+    ]
+  ],
+  "finite_vertices": true,
+  "watertight_parts": {
+    "geometry_0": true,
+    "geometry_1": true,
+    "geometry_2": true,
+    "geometry_3": true,
+    "geometry_4": true
+  },
+  "hidden_surfaces": "Inferred; shell shape is a coarse approximation, not exact product geometry."
+}

@@ -1,0 +1,12 @@
+{
+  "skill": "evai-image-cutout",
+  "method": "clean-white-background connected segmentation; original RGB retained",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "transparent_pixels": 1224237,
+  "opaque_pixels": 348279,
+  "original_rgb_preserved_on_sampled_pixels": true,
+  "limitation": "fixture-specific; not proof of complex-background automatic cutout; contact shadow is not fully removed"
+}

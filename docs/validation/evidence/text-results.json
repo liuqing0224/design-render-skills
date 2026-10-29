@@ -1,0 +1,24 @@
+[
+  {
+    "skill": "evai-image-to-prompt",
+    "input": "base-scene.png",
+    "output": "results/evai-image-to-prompt.md",
+    "checked": [
+      "observed_objects",
+      "english_prompt",
+      "no_invented_dimensions_or_brand"
+    ],
+    "status": "manual_sample_pass"
+  },
+  {
+    "skill": "evai-prompt-expand",
+    "input": "让卧室更温馨，保持布局家具门窗",
+    "output": "results/evai-prompt-expand.md",
+    "checked": [
+      "intent_preserved",
+      "edit_constraints",
+      "no_unrequested_objects"
+    ],
+    "status": "manual_sample_pass"
+  }
+]

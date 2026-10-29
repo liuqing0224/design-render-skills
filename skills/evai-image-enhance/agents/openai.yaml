@@ -1,0 +1,3 @@
+interface:
+  display_name: "AI洗图与图像细节提升"
+  short_description: "由Codex完成AI洗图与图像细节提升，提供输入要求、执行步骤、验收与失败处理"

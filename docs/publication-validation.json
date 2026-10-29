@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-29",
+  "skill_format_validated": 37,
+  "local_script_behavior_tests_passed": 11,
+  "installer_checks": [
+    "37-Skill temporary installation",
+    "installed file comparison",
+    "pre-existing target refusal",
+    "modified-copy detection"
+  ],
+  "relative_links_checked": true,
+  "machine_path_and_secret_pattern_scan": "no matching findings",
+  "visual_generation_rerun_for_publication": false,
+  "source_sample_summary": {
+    "date": "2026-10-28",
+    "passed": 17,
+    "partial": 17,
+    "failed": 2,
+    "website_same_input_comparison_verified": false
+  }
+}
