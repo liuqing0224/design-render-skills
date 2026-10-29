@@ -1,5 +1,5 @@
 {
-  "skill": "evai-image-to-3d",
+  "skill": "design-image-to-3d",
   "method": "manual reference interpretation and local parametric meshing",
   "automatic_reconstruction": false,
   "unit": "meter, assumed visual dimensions",

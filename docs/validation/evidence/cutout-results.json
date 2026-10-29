@@ -1,5 +1,5 @@
 {
-  "skill": "evai-image-cutout",
+  "skill": "design-image-cutout",
   "method": "clean-white-background connected segmentation; original RGB retained",
   "alpha_extrema": [
     0,

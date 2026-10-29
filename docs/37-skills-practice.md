@@ -5,11 +5,11 @@
 这套 Skills 已放进公开 GitHub 仓库：[liuqing0224/design-render-skills](https://github.com/liuqing0224/design-render-skills)，仓库中包含安装脚本、实践文档和测试样本。
 
 
-功能分类参考了 Evai 的公开目录。我把其中 43 个分类条目去重、拆分，再为每个技能补上必要输入、修改范围、执行步骤、交付和验收要求。网站用于提供功能线索，具体任务交给 Codex 和当前环境可用的工具执行。
+我按设计出图中的具体任务拆分技能，为每个技能补上必要输入、修改范围、执行步骤、交付和验收要求。具体任务交给 Codex 和当前环境可用且获授权的工具执行。
 
 整理完以后，我又按 36 个功能的主要路线，各做了一个受控样本。2026 年 10 月 28 日这轮测试的结果是：17 项样本通过、17 项部分通过、2 项未通过。
 
-这些结果让我把几件事区分开来：功能名称是否覆盖、工作流能否执行、图像是否满足保留条件，以及输出是否与网站效果一致。最后一项还没有完成同素材对照，不能据此宣称已经复现网站的能力。
+这些结果让我把几件事区分开来：工作流能否执行、图像是否满足保留条件，以及哪些输入和分支还没有测试。一次样本通过，只能说明本例满足已检查的目标。
 
 ![室内家装与建筑渲染的测试前后对照](images/01-室内与建筑渲染对照.png)
 
@@ -23,45 +23,45 @@
 
 | Skill | 负责的工作 |
 |---|---|
-| `evai-design-workbench` | 调度入口，选择技能并组织多步骤任务 |
-| `evai-model-render` | 根据模型或截图改善渲染表现，核对材质和结构 |
-| `evai-home-render` | 客厅、卧室等住宅空间的效果表现 |
-| `evai-commercial-render` | 办公、餐饮、零售等商业空间的效果表现 |
-| `evai-image-enhance` | 改善噪点、发灰和材质细节表现 |
-| `evai-replace-interior-elements` | 按清单替换室内软装、硬装外观 |
-| `evai-interior-local-edit` | 室内指定区域的重绘与修补 |
-| `evai-material-replace` | 更换指定物体或表面的材质 |
-| `evai-text-to-image` | 根据文字生成设计意向图 |
-| `evai-interior-style-transfer` | 调整室内风格，核对空间和家具锚点 |
-| `evai-floorplan-colorize` | 为室内平面分区填色，保留线稿和文字 |
-| `evai-empty-room-furnish` | 在空房或毛坯空间图中加入装修与家具 |
-| `evai-building-render` | 建筑外观渲染，核对体量、层数和开口 |
-| `evai-exterior-local-edit` | 建筑、景观效果图的局部修改 |
-| `evai-add-people` | 按位置、数量、姿态要求添加人物 |
-| `evai-environment-replace` | 替换建筑背景和环境配景 |
-| `evai-facade-renovation` | 基于现状图推演外立面改造效果 |
-| `evai-exterior-style-transfer` | 调整建筑、景观的视觉风格 |
-| `evai-aerial-render` | 鸟瞰表现，核对建筑分布与道路关系 |
-| `evai-siteplan-colorize` | 总平分区上色，保留建筑轮廓、路网和标注 |
-| `evai-landscape-render` | 景观表现，核对路径、种植与构筑物关系 |
-| `evai-viewpoint-change` | 用真实模型换相机，或进行有边界的单图视角推断 |
-| `evai-atmosphere-change` | 调整时间、天气与光照氛围 |
-| `evai-exterior-object-transfer` | 将参考对象迁移到室外场景指定位置 |
-| `evai-furniture-studio` | 家具、家饰棚拍背景与布光表现 |
-| `evai-furniture-outdoor` | 家具、家饰的室外场景表现 |
-| `evai-furniture-replace` | 用参考家具替换原场景中的指定家具 |
-| `evai-image-cutout` | 分离主体，交付带透明通道的素材 |
-| `evai-collage-beautify` | 将软装拼图整理成统一的空间场景 |
-| `evai-image-to-3d` | 图像辅助建模，导出并检查真实三维文件 |
-| `evai-image-to-prompt` | 根据实际图片整理构图、材质、光照等描述 |
-| `evai-prompt-expand` | 扩写设计要求，保留用户给定的约束 |
-| `evai-image-upscale` | 按目标像素放大，说明是否使用 AI 补细节 |
-| `evai-image-compress` | 优化文件体积，区分无损、有损和缩图 |
-| `evai-image-outpaint` | 扩展画布，检查原图尺度、像素与接缝 |
-| `evai-image-to-lineart` | 提取可读的栅格线稿 |
-| `evai-object-remove` | 移除指定物件及其阴影，补全背景 |
+| `design-workbench` | 调度入口，选择技能并组织多步骤任务 |
+| `design-model-render` | 根据模型或截图改善渲染表现，核对材质和结构 |
+| `design-home-render` | 客厅、卧室等住宅空间的效果表现 |
+| `design-commercial-render` | 办公、餐饮、零售等商业空间的效果表现 |
+| `design-image-enhance` | 改善噪点、发灰和材质细节表现 |
+| `design-replace-interior-elements` | 按清单替换室内软装、硬装外观 |
+| `design-interior-local-edit` | 室内指定区域的重绘与修补 |
+| `design-material-replace` | 更换指定物体或表面的材质 |
+| `design-text-to-image` | 根据文字生成设计意向图 |
+| `design-interior-style-transfer` | 调整室内风格，核对空间和家具锚点 |
+| `design-floorplan-colorize` | 为室内平面分区填色，保留线稿和文字 |
+| `design-empty-room-furnish` | 在空房或毛坯空间图中加入装修与家具 |
+| `design-building-render` | 建筑外观渲染，核对体量、层数和开口 |
+| `design-exterior-local-edit` | 建筑、景观效果图的局部修改 |
+| `design-add-people` | 按位置、数量、姿态要求添加人物 |
+| `design-environment-replace` | 替换建筑背景和环境配景 |
+| `design-facade-renovation` | 基于现状图推演外立面改造效果 |
+| `design-exterior-style-transfer` | 调整建筑、景观的视觉风格 |
+| `design-aerial-render` | 鸟瞰表现，核对建筑分布与道路关系 |
+| `design-siteplan-colorize` | 总平分区上色，保留建筑轮廓、路网和标注 |
+| `design-landscape-render` | 景观表现，核对路径、种植与构筑物关系 |
+| `design-viewpoint-change` | 用真实模型换相机，或进行有边界的单图视角推断 |
+| `design-atmosphere-change` | 调整时间、天气与光照氛围 |
+| `design-exterior-object-transfer` | 将参考对象迁移到室外场景指定位置 |
+| `design-furniture-studio` | 家具、家饰棚拍背景与布光表现 |
+| `design-furniture-outdoor` | 家具、家饰的室外场景表现 |
+| `design-furniture-replace` | 用参考家具替换原场景中的指定家具 |
+| `design-image-cutout` | 分离主体，交付带透明通道的素材 |
+| `design-collage-beautify` | 将软装拼图整理成统一的空间场景 |
+| `design-image-to-3d` | 图像辅助建模，导出并检查真实三维文件 |
+| `design-image-to-prompt` | 根据实际图片整理构图、材质、光照等描述 |
+| `design-prompt-expand` | 扩写设计要求，保留用户给定的约束 |
+| `design-image-upscale` | 按目标像素放大，说明是否使用 AI 补细节 |
+| `design-image-compress` | 优化文件体积，区分无损、有损和缩图 |
+| `design-image-outpaint` | 扩展画布，检查原图尺度、像素与接缝 |
+| `design-image-to-lineart` | 提取可读的栅格线稿 |
+| `design-object-remove` | 移除指定物件及其阴影，补全背景 |
 
-多步骤任务可以从 `evai-design-workbench` 进入。只需要换一块材质、压缩图片或者提取线稿时，也可以直接调用对应技能。
+多步骤任务可以从 `design-workbench` 进入。只需要换一块材质、压缩图片或者提取线稿时，也可以直接调用对应技能。
 
 我给工作台安排的顺序是：先明确输入角色和保留条件，再处理整体表现，随后做必要的局部修改、配景与氛围调整，最后检查尺寸、格式和文件体积。每一步只把已经验收的结果交给下一步。
 
@@ -128,7 +128,7 @@
 首次使用可以先给一个明确的小任务。下面这段模板适合室内局部修改，路径与区域需要替换成自己的材料：
 
 ```text
-使用 $evai-design-workbench，处理 <图片文件的完整路径>。
+使用 $design-workbench，处理 <图片文件的完整路径>。
 
 只把沙发上方指定矩形区域的白墙改成深灰石材。
 保留门窗、沙发、茶几、绿植、地板和相机位置。
@@ -142,12 +142,12 @@
 需求已经明确时，可以直接调用相应技能。例如：
 
 ```text
-使用 $evai-siteplan-colorize，为这张总平分区上色。
+使用 $design-siteplan-colorize，为这张总平分区上色。
 区分建筑、道路、绿地和水体，保留原建筑轮廓、路网和文字。
 ```
 
 ```text
-使用 $evai-image-compress，无损压缩这些 PNG。
+使用 $design-image-compress，无损压缩这些 PNG。
 尺寸和透明通道不变，分别报告前后字节数与像素核验结果。
 ```
 

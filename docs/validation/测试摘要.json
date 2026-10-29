@@ -1,18 +1,16 @@
 {
   "date": "2026-10-28",
-  "original_catalog_entries": 43,
   "mapped_function_skills": 36,
   "routing_skills": 1,
-  "catalog_added": 0,
-  "catalog_removed": 0,
-  "public_url_responses_200": 36,
   "native_case_counts": {
     "部分通过": 17,
     "样本通过": 17,
     "未通过": 2
   },
   "existing_script_tests_passed": 11,
-  "website_AB_verified": false,
-  "skill_definitions_modified": false,
-  "independent_agent_evaluation": false
+  "independent_agent_evaluation": false,
+  "documentation_updated": "2026-10-29",
+  "namespace": "design-",
+  "visual_samples_regenerated": false,
+  "workflow_algorithms_changed": false
 }
